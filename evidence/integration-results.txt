@@ -1,0 +1,4 @@
+PASS: all 16 main.py output lines matched independent expectations.
+PASS: imports are silent and have no test side effects.
+PASS: 200 generated expression trees matched independent Fraction arithmetic (seed 223).
+PASS: mixed-precedence integration result is 105.0.
