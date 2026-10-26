@@ -4,3 +4,4 @@ Execute Project in Python Interactive also produced the expected demonstration r
 All 106 direct module test cases passed again with Python 3.12 after consistent LF line-ending cleanup.
 F5 debugging also ran main.py and its complete 16-line output matched evidence/main-output.txt exactly.
 The debug adapter connection test succeeded after network access was allowed.
+The complete Stack, PostfixEvaluator, and InfixToPostfixConverter files were sent from the Visual Studio editor to the project Python Interactive window. All 10, 44, and 52 direct test cases passed there (106 total).

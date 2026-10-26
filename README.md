@@ -63,3 +63,5 @@ no machine-specific interpreter path is included in the portable project.
 
 F5 debugging was also verified. Its 16-line output exactly matched the expected
 demonstration output; see evidence/visual-studio-debug-output.txt.
+All 106 direct module test cases also passed in the project Python Interactive
+window (Stack: 10; evaluator: 44; converter: 52).
