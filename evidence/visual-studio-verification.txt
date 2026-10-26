@@ -1,0 +1,6 @@
+Visual Studio Community 2026 opened StackProject.pyproj with Python 3.12.
+Start Without Debugging ran main.py successfully and displayed the expected 16 output lines, including result 18 and handled input errors.
+Execute Project in Python Interactive also produced the expected demonstration results.
+All 106 direct module test cases passed again with Python 3.12 after consistent LF line-ending cleanup.
+F5 debugging also ran main.py and its complete 16-line output matched evidence/main-output.txt exactly.
+The debug adapter connection test succeeded after network access was allowed.

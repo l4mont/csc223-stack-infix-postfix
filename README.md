@@ -54,6 +54,12 @@ independent rational arithmetic. See evidence/integration-results.txt.
 
 Open StackProject.pyproj with the Python development workload installed. Select
 a compatible Python environment, then run the module you want to check or use
-Python Interactive's Execute File command. main.py is the normal startup file.
+Debug > Execute Project in Python Interactive. main.py is the normal startup file.
+Start Without Debugging (Ctrl+F5) and Python Interactive were verified in Visual
+Studio Community 2026 with the project Python 3.12 environment. See evidence/
+visual-studio-main.png and visual-studio-verification.txt.
 Local interpreter settings belong in the ignored StackProject.pyproj.user file;
 no machine-specific interpreter path is included in the portable project.
+
+F5 debugging was also verified. Its 16-line output exactly matched the expected
+demonstration output; see evidence/visual-studio-debug-output.txt.

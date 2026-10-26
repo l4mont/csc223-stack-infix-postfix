@@ -1,0 +1,16 @@
+----- Postfix Evaluator -----
+[5 3 +] = 8
+[8 2 - 3 +] = 9
+[35 27 + 3 *] = 186
+[5 3 8 * + 2 /] = 14.5
+[8 0 /] -> ERROR: Cannot divide by zero.
+[2 3 4 +] -> ERROR: Postfix expression has extra operands; one result is required.
+----- Infix to Postfix Converter -----
+[A + B] -> [A B +]
+[A + B * C] -> [A B C * +]
+[(A + B) * C] -> [A B + C *]
+[A - B + C] -> [A B - C +]
+[A + * B] -> ERROR: Misplaced operator '*'; an operand is required.
+[( A + B] -> ERROR: Mismatched parentheses: no closing parenthesis.
+----- Convert and Evaluate -----
+[12 + 3 * (4 - 2)] -> [12 3 4 2 - * +] = 18
