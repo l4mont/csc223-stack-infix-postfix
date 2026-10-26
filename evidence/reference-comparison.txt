@@ -1,0 +1,6 @@
+Reference discrepancy check
+Expression: A - B + C
+Abbreviated handout strictly-greater rule: A B C + -
+Official greater-or-equal rule, used by project: A B - C +
+PASS: equal-precedence operators preserve left associativity.
+This comparison diagnoses the difference between references; it is not a claimed earlier failure of the project implementation.

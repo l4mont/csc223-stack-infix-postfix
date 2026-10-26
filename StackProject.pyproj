@@ -1,0 +1,21 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{496081DD-252D-45DC-AFF2-43C209D3F18D}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>main.py</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>StackProject</Name>
+    <InterpreterId>MSBuild|Python312|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="stack.py" />
+    <Compile Include="postfix_evaluator.py" />
+    <Compile Include="infix_converter.py" />
+    <Compile Include="main.py" />
+  </ItemGroup>
+  <Import Project="$(MSBuildProjectFullPath).user" Condition="Exists('$(MSBuildProjectFullPath).user')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
